@@ -1,0 +1,601 @@
+/* Common styles for body and ul */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: Nunito, Arvo, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header styles */
+header {
+  background-color: #6ECCCC;
+  color: #fff;
+  padding: 20px;
+}
+
+.nav li .search-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.nav li .search-icon i {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+/* Top Head section styles */
+#top-head {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 36px;
+}
+
+section .content p {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Section styles */
+section {
+  padding: 30px;
+}
+
+section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section p {
+  color: #333;
+}
+
+/* Footer styles */
+footer {
+  background-color: #6ECCCC;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Activity image styles */
+.activity img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* List item styles for various sections */
+#things-to-do ul li,
+#upcoming-events ul li,
+#places-to-eat-drink ul li,
+#where-to-stay ul li {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#tips ul li,
+#resources ul li,
+#health-wellness ul li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+#tips ul li:before,
+#resources ul li:before,
+#health-wellness ul li:before {
+  content: "✓";
+  margin-right: 10px;
+  color: #6ECCCC;
+}
+
+/* Map Section styles */
+#map-section {
+  margin-top: 30px;
+}
+
+#map-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Image Box styles */
+.image-box-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.image-box {
+  width: 200px;
+  height: 260px; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.image-box-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Recommended Hotels styles */
+#recommended-hotels {
+  padding: 50px;
+}
+
+.hotel-card {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.hotel-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.hotel-details {
+  padding: 20px;
+}
+
+.hotel-details h3 {
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.hotel-details p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.book-now-btn {
+  display: inline-block;
+  background-color: #6ECCCC;
+  color: #fff;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.book-now-btn:hover {
+  background-color: #286090;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #6ECCCC;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Past Events styles */
+#past-events {
+  padding: 50px 0;
+}
+
+#past-events h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+
+.event h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.event p {
+  margin-bottom: 10px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 575px) {
+  section {
+    padding: 20px;
+  }
+
+  .image-box-container {
+    flex-direction: column;
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .image-box img {
+    height: 150px;
+  }
+
+  nav ul li {
+    font-size: 16px;
+  }
+
+  /* New Styles for smaller devices */
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    margin: 0 5px;
+    font-size: 14px;
+  }
+
+  .content h1 {
+    font-size: 28px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  .hotel-card img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .hotel-details h3 {
+    font-size: 20px;
+  }
+
+  .hotel-details p {
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+
+  #past-events h2 {
+    font-size: 20px;
+  }
+
+  .event {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Adjustments for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  section {
+    padding: 30px;
+  }
+
+  nav ul li {
+    font-size: 16px;
+  }
+}
+
+/* Adjustments for medium devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  section {
+    padding: 40px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+/* Adjustments for large devices */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    padding: 30px;
+  }
+
+  nav ul li {
+    margin: 0 30px;
+    font-size: 18px;
+  }
+
+  section {
+    padding: 50px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+}
+
+/* Adjustments for extra large devices */
+@media (min-width: 1440px) {
+  header {
+    padding: 40px;
+  }
+
+  nav ul li {
+    margin: 0 40px;
+    font-size: 20px;
+  }
+
+  section {
+    padding: 60px;
+  }
+
+  footer {
+    padding: 40px;
+  }
+}
+
+/* Adjustments for recommended hotels section */
+@media (max-width: 575px) {
+  #recommended-hotels {
+    padding: 20px;
+  }
+
+  .hotel-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .hotel-details {
+    padding: 20px;
+  }
+
+  .hotel-details h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .hotel-details p {
+    font-size: 14px;
+  }
+}
+
+/* Adjustments for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  #recommended-hotels {
+    padding: 30px;
+  }
+
+  .hotel-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .hotel-details {
+    padding: 20px;
+  }
+
+  .hotel-details h3 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .hotel-details p {
+    font-size: 16px;
+  }
+}
+
+/* Adjustments for medium devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #recommended-hotels {
+    padding: 40px;
+  }
+
+  .hotel-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hotel-card img {
+    width: 300px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .hotel-details {
+    padding: 20px;
+  }
+
+  .hotel-details h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .hotel-details p {
+    font-size: 16px;
+  }
+}
+
+/* Adjustments for large devices */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  #recommended-hotels {
+    padding: 50px;
+  }
+
+  .hotel-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hotel-card img {
+    width: 400px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .hotel-details {
+    padding: 30px;
+  }
+
+  .hotel-details h3 {
+    font-size: 28px;
+    margin-top: 0;
+  }
+
+  .hotel-details p {
+    font-size: 18px;
+  }
+}
+
+/* Adjustments for extra large devices */
+@media (min-width: 1440px) {
+  #recommended-hotels {
+    padding: 60px;
+  }
+
+  .hotel-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .hotel-card img {
+    width: 500px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .hotel-details {
+    padding: 40px;
+  }
+
+  .hotel-details h3 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .hotel-details p {
+    font-size: 20px;
+  }
+}
+
